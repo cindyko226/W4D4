@@ -1,0 +1,9 @@
+<h2>Creat New Band</h2>
+<form action='<%= bands_url %>' method='post'>
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label for='name'>Name: </label>
+    <input type='text' id='name' name='band[name]'>
+    <input type='submit' value='Submit'>
+</form>
+<br>
+<a href='<%=bands_url%>'>Cancle</a>
